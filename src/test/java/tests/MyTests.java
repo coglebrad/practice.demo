@@ -30,4 +30,11 @@ public class MyTests extends BaseClass{
         link("Frames");
         System.out.println("boo");
     }
+
+    @Test
+    public void FourthTest(){
+        invokeBrowser("https://the-internet.herokuapp.com/");
+        link("Inputs");
+        System.out.println("boo");
+    }
 }
