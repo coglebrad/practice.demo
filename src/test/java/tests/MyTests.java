@@ -22,6 +22,7 @@ public class MyTests extends BaseClass{
         invokeBrowser("https://the-internet.herokuapp.com/");
         link("Dropdown");
         System.out.println("boo");
+        Streaming();
     }
 
     @Test

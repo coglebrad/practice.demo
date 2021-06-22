@@ -1,8 +1,13 @@
 package base;
 
 import org.openqa.selenium.*;
+import util.ResultsPublish;
+
+
 
 public class BaseClass {
+
+    ResultsPublish rp =  new ResultsPublish();
 
     public void invokeBrowser(String url) {
         //System.out.println("Thread id = " + Thread.currentThread().getId());
@@ -20,6 +25,10 @@ public class BaseClass {
         DriverManager.getDriver().findElement(By.linkText(text)).click();
     }
 
+    public void Streaming(){
+
+        rp.TestMessage();
+    }
 
    /* private WebDriver _webDriver;
     public static HashMap<String,Object> parameters = new HashMap<String,Object>();
